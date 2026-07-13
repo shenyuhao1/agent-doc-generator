@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-13T10:19:40.621Z",
+  "images": [
+    {
+      "id": "pipeline",
+      "path": "pipeline.png",
+      "type": "png",
+      "width": 1360,
+      "height": 820,
+      "caption": "图 1：图片从真实来源进入清单，再以二进制方式写入 DOCX。",
+      "alt": "Agent Doc Generator 图片流水线示意图",
+      "origin": "screenshot",
+      "required": true
+    }
+  ]
+}

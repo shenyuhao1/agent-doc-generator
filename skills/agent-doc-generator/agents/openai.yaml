@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Doc Generator"
+  short_description: "Automate illustrated development DOCX files"
+  default_prompt: "Use $agent-doc-generator to create an illustrated development document from this project or conversation."

@@ -1,0 +1,19 @@
+{
+  "outputDir": "doc-assets",
+  "manifest": "images.json",
+  "browserChannel": "chrome",
+  "viewport": { "width": 1440, "height": 900 },
+  "images": [
+    {
+      "id": "pipeline",
+      "source": "screenshot",
+      "url": "showcase.html",
+      "file": "pipeline.png",
+      "selector": "#pipeline",
+      "waitForSelector": "#pipeline",
+      "caption": "图 1：图片从真实来源进入清单，再以二进制方式写入 DOCX。",
+      "alt": "Agent Doc Generator 图片流水线示意图",
+      "required": true
+    }
+  ]
+}

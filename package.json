@@ -1,0 +1,20 @@
+{
+  "name": "agent-doc-generator-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Validation and self-documentation demo for Agent Doc Generator",
+  "scripts": {
+    "check": "node --check skills/agent-doc-generator/scripts/prepare-images.mjs && node --check skills/agent-doc-generator/scripts/doc-image-helpers.cjs && node --check examples/self-documentation/gen_doc.js",
+    "example": "node examples/self-documentation/gen_doc.js",
+    "screenshot:example": "node skills/agent-doc-generator/scripts/prepare-images.mjs examples/self-documentation/image-plan.json"
+  },
+  "dependencies": {
+    "docx": "^9.5.1"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.54.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
