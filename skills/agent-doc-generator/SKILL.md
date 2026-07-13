@@ -1,6 +1,6 @@
 ---
 name: agent-doc-generator
-description: "Turn agent development sessions, conversation transcripts, or project notes into illustrated, reproducible DOCX documentation. Use when the user wants an automated development document with existing images, browser screenshots, precise code-rendered diagrams, or agent-generated explanatory visuals, especially when Chinese text and image encoding must remain reliable. Do not use for editing an existing DOCX; use a DOCX editing skill instead."
+description: "Codex and Claude Code skill for turning development sessions, conversation transcripts, or project notes into illustrated, reproducible Word/DOCX development documentation. Use when the user wants automated documentation with Playwright screenshots, precise code-rendered diagrams, or agent-generated explanatory visuals, especially when Chinese text and image encoding must remain reliable. Do not use for editing an existing DOCX; use a DOCX editing skill instead."
 ---
 
 # Generate Illustrated Agent Documentation

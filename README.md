@@ -4,6 +4,10 @@
 
 **Turn agent sessions into illustrated, reproducible Word documentation.**
 
+**For Codex and Claude Code**: generate Word/DOCX development documentation from coding-agent sessions with automatic Playwright screenshots, code-rendered diagrams, and encoding-safe images.
+
+适用于使用 Codex 或 Claude Code 开发，又需要交付 Word / DOCX 开发文档的人。
+
 [![GitHub stars](https://img.shields.io/github/stars/shenyuhao1/agent-doc-generator?style=flat-square)](https://github.com/shenyuhao1/agent-doc-generator/stargazers)
 [![skills.sh](https://skills.sh/b/shenyuhao1/agent-doc-generator)](https://skills.sh/shenyuhao1/agent-doc-generator)
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
