@@ -97,12 +97,11 @@ function normalizeImageType(filePath) {
 
 function loadPlaywright() {
   const candidates = [
-    [require, process.env.PLAYWRIGHT_PATH],
     [projectRequire, "playwright"],
     [projectRequire, "playwright-core"],
     [require, "playwright"],
     [require, "playwright-core"],
-  ].filter(([, candidate]) => Boolean(candidate));
+  ];
   for (const [load, candidate] of candidates) {
     try {
       const module = load(candidate);
@@ -115,7 +114,7 @@ function loadPlaywright() {
   }
   fail(
     "Playwright is required for screenshot sources. Install it with " +
-      "`npm install -D playwright` or set PLAYWRIGHT_PATH to a playwright/playwright-core package directory."
+      "`npm install -D playwright` or `npm install -D playwright-core`."
   );
 }
 
@@ -240,9 +239,10 @@ async function main() {
   if (needsBrowser) {
     const { chromium } = loadPlaywright();
     const launchOptions = { headless: true };
-    if (plan.browserExecutable) {
-      launchOptions.executablePath = path.resolve(planDir, plan.browserExecutable);
-    } else if (plan.browserChannel) {
+    if (Object.hasOwn(plan, "browserExecutable")) {
+      fail("browserExecutable is not supported. Use a trusted Playwright browser or browserChannel.");
+    }
+    if (plan.browserChannel) {
       launchOptions.channel = plan.browserChannel;
     }
     browser = await chromium.launch(launchOptions);

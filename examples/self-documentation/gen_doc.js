@@ -320,7 +320,7 @@ children.push(
     [2700, 1500, 5438]
   ),
   subheading("运行命令"),
-  codeBlock('$env:PLAYWRIGHT_PATH = "C:\\path\\to\\playwright-core"\nnode prepare-images.mjs image-plan.json\n$env:NODE_PATH = npm root -g\nnode gen_doc.js'),
+  codeBlock('npm install -D playwright-core\nnode prepare-images.mjs image-plan.json\n$env:NODE_PATH = npm root -g\nnode gen_doc.js'),
   callout("交付结果", "生成器、截图计划、图片清单、截图文件和最终 DOCX 位于同一展示目录，可以独立检查和重复执行。", colors.blue, "EDF4FA")
 );
 
